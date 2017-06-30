@@ -1,121 +1,149 @@
 .header{
+  width:100%;
   height:119px;
+  background:#c4a2e2;
   position:relative;
 }
-
-.gnb{
-  height: 75px;
-
-
-}
-
 .inner-box{
-  width:1600px;
+  width:940px;
   margin:0 auto;
 }
 
-.inner-box:after{
-  content:"";
-  display:block;
-  clear:both;
+
+.gnb{
+  width:100%;
+  height:75px;
+  background:#f9fafc;
+  position:absolute;
+  padding-top:44px;
 }
+
 .logo{
   width:85px;
   height:35px;
-  background:url(../images/logo.png) no-repeat;
   float:left;
-  margin:24px 244px 0 331px;
-  text-indent:-99999px;
+  margin-top:23px;
 
+  background:url(../images/logo1.png) no-repeat;
+  text-indent:-99999px;
 }
 
-.menu:after{
-  content:"";
-  display: block;
-  clear: both;
+.menu{
+  float:left;
+  margin-left:244px;
+  margin-top: 3px;
 }
 
 .menu-list{
-  width:100%
+  width:402px;
+  margin-top:30px;
 }
-
 
 .menu-list-item{
-  margin-right:37px;
-  margin-top:33px;
   float:left;
-
-  color: #2c4755;
+  margin-right:36px;
+}
+.menu-list-item:last-child{
+  margin-right:0;
 }
 
-.menu-list:after{
-  content:"";
-  display:block;
-  clear:both;
+.menu-list-link{
+  color:#2c4755;
+  font-weight:700;
+  font-size:14px;
 }
 
 
 .input-search{
-  height: 37px;
-  margin-left:1129px;
+  width:142px;
+  height:37px;
+  float:right;
+  margin-top:18px;
+  padding-left: 6px;
+  font-weight:500;
+  font-family: Myriad Pro, sans-serif;
+  border-radius:8px;
+  border:1px solid #cfcfcf;
 }
+
+.input-search input::-webkit-input-placeholder{
+  color:#2c4755;
+}
+.input-search input::-moz-placeholder{
+  color:#2c4755;
+}
+.input-search input:-ms-input-placeholder{
+  color:#2c4755;
+}
+.input-search input:-moz-placeholder{
+  color:#2c4755;
+}
+
+.input-search:after{
+  content:"";
+  display:inline-block;
+
+  width:5px;
+  height:5px;
+  background:url(../images/astro_icon.png)no-repeat 0 0;
+}
+
+
 
 .util{
-  width:100%;
-  height:45px;
-  background:#c4a2e2;
-
-}
-
-.util-list{
-  padding-left:329px;
-  color: #e5e2f2;
-}
-
-
-
-.util-list-item-call:before{
-  content:"";
-  display: inline-block;
-  background:url(../images/icon_sprite.png) no-repeat -625px -28px;
-  width:16px;
-  height:12px;
-  margin-right:4px;
-}
-
-.util-list-item-call{
-  float:left;
-  margin-right: 26px;
-  margin-top:16px;
-}
-
-.util-list-item-mail:before{
-  content:"";
-  display: inline-block;
-  background:url(../images/icon_sprite.png) no-repeat -643px -28px;
-  width:17px;
-  height:12px;
-  margin-right:9px;
-}
-
-.util-list-item-mail{
-  float:left;
-  margin-top:16px;
-  margin-right: 596px;
-}
-
-.option:before{
-  content:"";
-  display: inline-block;
-  background:url(../images/icon_sprite.png) no-repeat -662px -28px;
-  width:18px;
-  height:11px;
-}
-.option{
-  border:0;
-  background:#c4a2e2;
   color:#fff;
-  margin-top:17px;
+  width:100%;
+  height:44px;
+  background: #c4a2e2;
+  position:absolute;
+}
+.info{
+  float:left;
+}
+
+.number:before{
+  content:"";
+  display:block;
+  clear:both;
+
+  width:17px;
+  height:11px;
+  background:url(../images/astro_icon.png) no-repeat;
+  float:left;
+  margin:0 4px 3px 0;
+}
+.number{
+  font-size:11px;
+  float:left;
+  margin-right:26px;
+  margin-top:16px;
+}
+
+.email:before{
+  content:"";
+  display:block;
+  clear:both;
+
+  width:17px;
+  height:11px;
+  background:url(../images/astro_icon.png) no-repeat -16px 0;
+  float:left;
+  margin: 0 9px 0 0;
+}
+
+
+.email{
+  font-size:11px;
+  margin-top:15px;
+  float:left;
+}
+
+.nation{
+  float:right;
+  margin-top:12px;
+  background:#c4a2e2;
+  border:0;
+  color:#fff;
 }
 
 
@@ -134,6 +162,11 @@
   text-align:center;
 }
 
+.section1:after{
+  content:"" ;
+  display: block;
+  clear:both;
+}
 .section2{
   width:634px;
   height: 184px;
@@ -157,11 +190,10 @@
 }
 
 
-.inner-box{
+.inner-box1{
   width:1600px;
   margin:0 auto;
 }
-
 .inner-box-sub{
   width:960px;
   margin:0 auto;
@@ -182,6 +214,7 @@
   height: 129px;
   background:url(../images/cloud.png)no-repeat;
   margin-top:44px;
+
 }
 
 
@@ -437,7 +470,7 @@
 }
 
 .col:nth-child(1){
-  margin-left:332px;
+  margin: 0 auto;
 }
 
 .list-heading{
